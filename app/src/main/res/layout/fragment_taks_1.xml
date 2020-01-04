@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ba"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    tools:context=".Taks.Taks_1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5sp"
+            android:background="@drawable/next_button"
+            android:text="صـغـار"
+            android:textColor="@color/Red"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+           />
+
+        <Button
+            android:id="@+id/btk1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5sp"
+            android:background="@drawable/next_button"
+            android:text="كـبـار"
+            android:textColor="@color/Red"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+          />
+    </LinearLayout>
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView_T11"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2sp"
+        android:layout_marginBottom="2sp"
+        android:layout_weight="1"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewTask3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-9066719717930706/6501654669" />
+
+</LinearLayout>

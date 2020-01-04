@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ba"
+    tools:context=".Ash.Ash_3"
+    tools:layout_editor_absoluteY="25dp"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    >
+
+
+    <Spinner
+
+        android:id="@+id/spinner_ash3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:entries="@array/ash_3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/shafaf22"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textDirection="rtl"
+        tools:layout_editor_absoluteX="238dp"
+        tools:layout_editor_absoluteY="6dp"
+       />
+
+    <ScrollView
+        android:id="@+id/scrollView_ash3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="7dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/COPTIC_ash3"
+                style="@style/Coptic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin=".8dp"
+                android:layout_weight="1"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/Ca_ash3"
+                style="@style/CopticArab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin=".8dp"
+                android:layout_weight="1"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/ARAB_ash3"
+                style="@style/Arabic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin=".8dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/Blue" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9066719717930706/6501654669"
+        />
+</LinearLayout>

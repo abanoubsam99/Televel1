@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:background="@drawable/ba"
+    tools:context="com.example.level1.Quizes.QuizCatalogue">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/quiz2" />
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="امتحانات السنة الاولي "
+        android:layout_margin="10dp"
+        android:background="@drawable/next_button"
+        android:textSize="25dp"
+        android:onClick="Quiz1"
+        android:textStyle="bold|italic"
+        android:textColor="@color/Blue"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="امتحانات السنة الثانية"
+        android:layout_margin="10dp"
+        android:background="@drawable/next_button"
+        android:textStyle="bold|italic"
+        android:onClick="Quiz2"
+
+        android:textColor="@color/Blue"
+        android:textSize="25dp"
+
+        />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="امتحانات السنة الثالثة "
+        android:layout_margin="10dp"
+        android:background="@drawable/next_button"
+        android:textSize="25dp"
+        android:onClick="Quiz3"
+
+        android:textStyle="bold|italic"
+        android:textColor="@color/Blue"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adViewquiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:adSize="BANNER"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2sp"
+            app:adUnitId="ca-app-pub-9066719717930706/6501654669" />
+    </RelativeLayout>
+</LinearLayout>

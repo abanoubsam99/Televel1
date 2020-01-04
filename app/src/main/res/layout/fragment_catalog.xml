@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".catalog"
+    android:orientation="vertical"
+    android:background="@drawable/ba"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adViewcatalog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:adSize="BANNER"
+                app:adUnitId="ca-app-pub-9066719717930706/6501654669"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الـسـنـة الاولـي "
+                android:textSize="20dp"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="269dp"
+                android:src="@drawable/a11" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adViewcatalog2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:adSize="BANNER"
+                app:adUnitId="ca-app-pub-9066719717930706/6501654669"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="السـنـة الـثـانـيـة"
+                android:textSize="20dp"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="395dp"
+                android:src="@drawable/a12" />
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adViewcatalog3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:adSize="BANNER"
+                app:adUnitId="ca-app-pub-9066719717930706/6501654669"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الـسـنـة الثالثة"
+                android:textSize="20dp"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="395dp"
+                android:src="@drawable/a13" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="395dp"
+                android:src="@drawable/aa13" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adViewcatalog4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:adSize="BANNER"
+                app:adUnitId="ca-app-pub-9066719717930706/6501654669"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

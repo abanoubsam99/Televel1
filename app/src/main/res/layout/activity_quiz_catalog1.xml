@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:background="@drawable/ba"
+    tools:context="com.example.level1.Quizes.QuizCatalog1">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/quiz2"
+        android:layout_marginLeft="150dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adViewquiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-9066719717930706/6501654669"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الـسـنـة الاولـي "
+                android:textSize="30dp"
+                android:textColor="@color/Black"
+                android:gravity="center"
+                android:textStyle="bold|italic"
+                />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الطقس      "
+                android:textSize="25dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/Black"
+                android:layout_marginTop="15sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/btt13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ترم3"
+                        android:onClick="quizt13"
+
+                        android:layout_margin="3dp"
+                        android:background="@drawable/next_button"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/Green"
+                        />
+
+                    <Button
+                        android:id="@+id/btt12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ترم2"
+                        android:layout_margin="3dp"
+                        android:onClick="quizt12"
+                        android:background="@drawable/next_button"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/Green"
+                        />
+
+                    <Button
+                        android:id="@+id/btt11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ترم 1"
+                        android:onClick="quizt11"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/next_button"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/Green"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/hight13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="HighScore: 0/39 "
+                        android:textSize="15sp"
+                        android:layout_margin="3dp"
+
+                        android:textColor="@color/Red"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/hight12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="HighScore: 0/22 "
+                        android:textSize="15sp"
+                        android:layout_margin="3dp"
+
+                        android:textColor="@color/Red"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:id="@+id/hight11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="HighScore: 0/25 "
+                        android:textSize="15sp"
+                        android:layout_margin="3dp"
+
+                        android:textColor="@color/Red"
+                        android:textAlignment="center" />
+                </LinearLayout>
+                <com.google.android.gms.ads.AdView
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adViewquiz2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-9066719717930706/6501654669"
+                    android:layout_margin="5dp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text=" القبطي"
+                android:gravity="center"
+                android:textColor="@color/Black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_marginTop="15sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/btc13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/next_button"
+                        android:text="ترم3"
+                        android:onClick="quizC13"
+
+                        android:textColor="@color/Green"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btc12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/next_button"
+                        android:onClick="quizC12"
+
+                        android:text="ترم2"
+                        android:textColor="@color/Green"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btc11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/next_button"
+                        android:text="ترم 1"
+                        android:onClick="quizC11"
+                        android:textColor="@color/Green"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/highc13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="HighScore: 0/20 "
+                        android:textAlignment="center"
+                        android:textColor="@color/Red"
+                        android:textSize="15sp"
+                        android:layout_margin="3dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/highc12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="HighScore: 0/28 "
+                        android:textAlignment="center"
+                        android:textColor="@color/Red"
+                        android:textSize="15sp"
+                        android:layout_margin="3dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/highc11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="HighScore: 0/13 "
+                        android:textAlignment="center"
+                        android:textColor="@color/Red"
+                        android:textSize="15sp"
+                        android:layout_margin="3dp"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adViewquiz3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-9066719717930706/6501654669"
+                android:layout_margin="5dp"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
